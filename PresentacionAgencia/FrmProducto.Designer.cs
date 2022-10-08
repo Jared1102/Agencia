@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(550, 75);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 5;
             // 
             // label1
             // 
@@ -60,19 +60,6 @@
             this.label1.Size = new System.Drawing.Size(86, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Producto";
-            // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 3;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
-            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // label2
             // 
@@ -88,7 +75,7 @@
             this.txtNombre.Location = new System.Drawing.Point(99, 92);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(155, 26);
-            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TabIndex = 0;
             // 
             // label3
             // 
@@ -104,7 +91,7 @@
             this.txtMarca.Location = new System.Drawing.Point(350, 92);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(155, 26);
-            this.txtMarca.TabIndex = 4;
+            this.txtMarca.TabIndex = 1;
             // 
             // label4
             // 
@@ -121,7 +108,7 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(473, 151);
-            this.txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.TabIndex = 2;
             // 
             // btnGuardar
             // 
@@ -129,12 +116,25 @@
             this.btnGuardar.Location = new System.Drawing.Point(183, 339);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(189, 59);
-            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.TabIndex = 3;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 4;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // FrmProducto
             // 

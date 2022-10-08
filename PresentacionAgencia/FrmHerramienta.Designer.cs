@@ -80,7 +80,7 @@
             this.txtMarca.Location = new System.Drawing.Point(109, 158);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(149, 26);
-            this.txtMarca.TabIndex = 4;
+            this.txtMarca.TabIndex = 1;
             // 
             // label3
             // 
@@ -97,7 +97,7 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(463, 142);
-            this.txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.TabIndex = 3;
             // 
             // label4
             // 
@@ -114,7 +114,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(178, 414);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(189, 59);
-            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -130,7 +130,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(550, 75);
-            this.panel1.TabIndex = 9;
+            this.panel1.TabIndex = 6;
             // 
             // label5
             // 
@@ -150,7 +150,7 @@
             this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
             this.btnrCerrar.Name = "btnrCerrar";
             this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 3;
+            this.btnrCerrar.TabIndex = 5;
             this.btnrCerrar.UseVisualStyleBackColor = true;
             this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 

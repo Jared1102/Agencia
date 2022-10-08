@@ -68,6 +68,9 @@ namespace PresentacionAgencia
                         FrmHerramienta frmHerramienta = new FrmHerramienta();
                         frmHerramienta.ShowDialog();
                     } break;
+                case 6: {
+                        _manejadorHerramienta.borrarDatos(herramienta);
+                    }break;
             }
             herramienta = null;
             Actualizar();
