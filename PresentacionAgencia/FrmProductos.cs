@@ -15,6 +15,7 @@ namespace PresentacionAgencia
     public partial class FrmProductos : Form
     {
         private ManejadorProducto _manejadorProducto;
+        public static Producto producto=null;
         public FrmProductos()
         {
             InitializeComponent();
@@ -47,6 +48,27 @@ namespace PresentacionAgencia
         {
             FrmProducto frmProducto = new FrmProducto();
             frmProducto.ShowDialog();
+            Actualizar();
+        }
+
+        private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            producto = new Producto
+            {
+                CodigoBarras = int.Parse(dgvProductos.CurrentRow.Cells["CodigoBarras"].Value.ToString()),
+                Nombre = dgvProductos.CurrentRow.Cells["Nombre"].Value.ToString(),
+                Descripcion = dgvProductos.CurrentRow.Cells["Descripcion"].Value.ToString(),
+                Marca = dgvProductos.CurrentRow.Cells["Marca"].Value.ToString()
+            };
+
+            switch (e.ColumnIndex)
+            {
+                case 4: {
+                        FrmProducto frmProducto = new FrmProducto();
+                        frmProducto.ShowDialog();
+                    } break;
+            }
+            producto = null;
             Actualizar();
         }
     }

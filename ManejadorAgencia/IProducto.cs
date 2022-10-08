@@ -12,8 +12,7 @@ namespace ManejadorAgencia
     {
         void obtenerDatos(DataGridView tabla);
         void agregarDatos(dynamic dato);
-        void modificarDatos(dynamic dato, dynamic aux_dato);
-
+        bool modificarDatos(dynamic dato, dynamic aux_dato);
         void borrarDatos(dynamic dato);
     }
 }

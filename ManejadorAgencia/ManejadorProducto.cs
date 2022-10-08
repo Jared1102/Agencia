@@ -43,19 +43,24 @@ namespace ManejadorAgencia
             }
         }
 
-        public void modificarDatos(dynamic dato, dynamic aux_dato)
+        public bool modificarDatos(dynamic dato, dynamic aux_dato)
         {
             try
             {
-                DialogResult dialogResult = MessageBox.Show(string.Format("¿Esta seguro de guardar los cambios en {0}?", aux_dato.Nombre),
+                DialogResult dialogResult = MessageBox.Show(string.Format("¿Esta seguro de guardar los cambios en {0}?\n", aux_dato.Nombre),
                     "Modificando Producto", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (DialogResult.Yes==dialogResult)
+                if (DialogResult.Yes == dialogResult)
+                {
                     _accesoDatosProducto.ModificarProducto(dato);
+                    return true;
+                }
+                    
             }
             catch (Exception ex)
             {
                 _grafico.Mensaje(string.Format("Ha ocurrido un error inesperado\n{0}", ex), "Error al modificar", MessageBoxIcon.Error);
             }
+            return false;
         }
 
         public void obtenerDatos(DataGridView tabla)
