@@ -67,6 +67,9 @@ namespace PresentacionAgencia
                         FrmProducto frmProducto = new FrmProducto();
                         frmProducto.ShowDialog();
                     } break;
+                case 5: {
+                        _manejadorProducto.borrarDatos(producto);
+                    }break;
             }
             producto = null;
             Actualizar();
