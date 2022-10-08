@@ -49,6 +49,12 @@
     <Compile Include="ButtonRound.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="FrmHerramienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHerramienta.Designer.cs">
+      <DependentUpon>FrmHerramienta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHerramienta.resx">
+      <DependentUpon>FrmHerramienta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHerramientas.resx">
       <DependentUpon>FrmHerramientas.cs</DependentUpon>
     </EmbeddedResource>
