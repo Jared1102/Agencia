@@ -1,0 +1,2 @@
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.AssemblyReference.cache
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.SuggestedBindingRedirects.cache
