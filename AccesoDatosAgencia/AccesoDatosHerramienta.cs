@@ -54,5 +54,17 @@ namespace AccesoDatosAgencia
                 herramienta.Descripcion);
             _conexion.EjecutarConsola(consulta);
         }
+
+        public void ModificarHerramientas(Herramienta herramienta)
+        {
+            string consulta = string.Format("CALL p_Herramienta({0},'{1}'," +
+                "{2},'{3}','{4}',2)",
+                herramienta.CodigoHerramienta.ToString(),
+                herramienta.Nombre,
+                herramienta.Medida.ToString(),
+                herramienta.Marca,
+                herramienta.Descripcion);
+            _conexion.EjecutarConsola(consulta);
+        }
     }
 }
