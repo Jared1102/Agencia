@@ -10,7 +10,7 @@ using Crud;
 
 namespace ManejadorAgencia
 {
-    public class ManejadorProducto : IProducto
+    public class ManejadorProducto : ICRUD
     {
         private AccesoDatosProducto _accesoDatosProducto = new AccesoDatosProducto();
         private Grafico _grafico = new Grafico();

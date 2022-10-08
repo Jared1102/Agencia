@@ -8,7 +8,7 @@ using EntidadesAgencia;
 
 namespace ManejadorAgencia
 {
-    internal interface IProducto
+    internal interface ICRUD
     {
         void obtenerDatos(DataGridView tabla);
         void agregarDatos(dynamic dato);
