@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,6 +62,9 @@ namespace ManejadorAgencia
         {
             tabla.Columns.Clear();
             tabla.DataSource = _accesoDatosProducto.ObtenerProductos();
+
+            tabla.Columns.Insert(4, _grafico.Boton("Modificar", Color.Green));
+            tabla.Columns.Insert(5, _grafico.Boton("Eliminar", Color.Red));
 
             tabla.AutoResizeColumns();
         }
