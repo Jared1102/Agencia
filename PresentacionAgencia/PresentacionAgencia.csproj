@@ -89,5 +89,15 @@
   <ItemGroup>
     <None Include="Resources\agregarGreen_32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesAgencia\EntidadesAgencia.csproj">
+      <Project>{d94d4f5b-97ba-481f-86e7-94cfd8e80d41}</Project>
+      <Name>EntidadesAgencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManejadorAgencia\ManejadorAgencia.csproj">
+      <Project>{7f30739b-26b3-4c83-adbe-2634dc389107}</Project>
+      <Name>ManejadorAgencia</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
