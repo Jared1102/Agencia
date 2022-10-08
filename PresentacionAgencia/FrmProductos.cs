@@ -42,5 +42,10 @@ namespace PresentacionAgencia
         {
             Cerrar();
         }
+
+        private void btnrAgregar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
