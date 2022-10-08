@@ -30,14 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,18 @@
             this.label1.Size = new System.Drawing.Size(86, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Producto";
+            // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 3;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -86,12 +98,12 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Marca";
             // 
-            // textBox1
+            // txtMarca
             // 
-            this.textBox1.Location = new System.Drawing.Point(350, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtMarca.Location = new System.Drawing.Point(350, 92);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(155, 26);
+            this.txtMarca.TabIndex = 4;
             // 
             // label4
             // 
@@ -102,47 +114,36 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Descripción";
             // 
-            // textBox2
+            // txtDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(32, 160);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(473, 151);
-            this.textBox2.TabIndex = 6;
+            this.txtDescripcion.Location = new System.Drawing.Point(32, 160);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(473, 151);
+            this.txtDescripcion.TabIndex = 6;
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.Image = global::PresentacionAgencia.Properties.Resources.guardarColor_32;
-            this.button1.Location = new System.Drawing.Point(183, 339);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 59);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 3;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Image = global::PresentacionAgencia.Properties.Resources.guardarColor_32;
+            this.btnGuardar.Location = new System.Drawing.Point(183, 339);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(189, 59);
+            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 423);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
@@ -168,9 +169,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

@@ -43,7 +43,7 @@ namespace AccesoDatosAgencia
 
         public void AgregarProducto(Producto producto)
         {
-            string consulta = string.Format("CALL p_Producto({0},{1},{2},{3},1)",
+            string consulta = string.Format("CALL p_Producto({0},'{1}','{2}','{3}',1)",
                 producto.CodigoBarras.ToString(), producto.Nombre, producto.Descripcion, producto.Marca);
             _conexion.EjecutarConsola(consulta);
         }

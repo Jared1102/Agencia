@@ -44,3 +44,4 @@ C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Hash.xxHa
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe.config
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CopyComplete
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProducto.resources

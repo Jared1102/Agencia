@@ -45,7 +45,9 @@ namespace PresentacionAgencia
 
         private void btnrAgregar_Click(object sender, EventArgs e)
         {
-            
+            FrmProducto frmProducto = new FrmProducto();
+            frmProducto.ShowDialog();
+            Actualizar();
         }
     }
 }
