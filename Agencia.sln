@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatosAgencia", "Acces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntidadesAgencia", "EntidadesAgencia\EntidadesAgencia.csproj", "{D94D4F5B-97BA-481F-86E7-94CFD8E80D41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejadorAgencia", "ManejadorAgencia\ManejadorAgencia.csproj", "{7F30739B-26B3-4C83-ADBE-2634DC389107}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D94D4F5B-97BA-481F-86E7-94CFD8E80D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D94D4F5B-97BA-481F-86E7-94CFD8E80D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D94D4F5B-97BA-481F-86E7-94CFD8E80D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F30739B-26B3-4C83-ADBE-2634DC389107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F30739B-26B3-4C83-ADBE-2634DC389107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F30739B-26B3-4C83-ADBE-2634DC389107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F30739B-26B3-4C83-ADBE-2634DC389107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EntidadesAgencia;
 
 namespace ManejadorAgencia
 {
     internal interface IProducto
     {
-        DataGridView
+        void obtenerDatos(DataGridView tabla);
+        void agregarDatos(dynamic dato);
+        void modificarDatos(dynamic dato, dynamic aux_dato);
+
+        void borrarDatos(dynamic dato);
     }
 }
