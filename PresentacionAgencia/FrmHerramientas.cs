@@ -15,6 +15,7 @@ namespace PresentacionAgencia
     public partial class FrmHerramientas : Form
     {
         private ManejadorHerramienta _manejadorHerramienta;
+        public static Herramienta herramienta=null;
         public FrmHerramientas()
         {
             InitializeComponent();
@@ -48,6 +49,27 @@ namespace PresentacionAgencia
         {
             FrmHerramienta frmHerramienta = new FrmHerramienta();
             frmHerramienta.ShowDialog();
+            Actualizar();
+        }
+
+        private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            herramienta = new Herramienta
+            {
+                CodigoHerramienta = Convert.ToInt32(dgvProductos.CurrentRow.Cells["CodigoHerramienta"].Value.ToString()),
+                Nombre = dgvProductos.CurrentRow.Cells["Nombre"].Value.ToString(),
+                Marca = dgvProductos.CurrentRow.Cells["Marca"].Value.ToString(),
+                Medida = Convert.ToDecimal(dgvProductos.CurrentRow.Cells["Medida"].Value.ToString()),
+                Descripcion = dgvProductos.CurrentRow.Cells["Descripcion"].Value.ToString()
+            };
+            switch (e.ColumnIndex)
+            {
+                case 5: {
+                        FrmHerramienta frmHerramienta = new FrmHerramienta();
+                        frmHerramienta.ShowDialog();
+                    } break;
+            }
+            herramienta = null;
             Actualizar();
         }
     }

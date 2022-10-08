@@ -15,10 +15,19 @@ namespace PresentacionAgencia
     public partial class FrmHerramienta : Form
     {
         private ManejadorHerramienta _manejadorHerramienta;
+        private Herramienta aux_herramienta=null;
         public FrmHerramienta()
         {
             InitializeComponent();
             _manejadorHerramienta = new ManejadorHerramienta();
+            if (FrmHerramientas.herramienta!=null)
+            {
+                aux_herramienta=FrmHerramientas.herramienta;
+                txtDescripcion.Text = FrmHerramientas.herramienta.Descripcion;
+                txtMarca.Text = FrmHerramientas.herramienta.Marca;
+                txtMedida.Text = FrmHerramientas.herramienta.Medida.ToString();
+                txtNombre.Text = FrmHerramientas.herramienta.Nombre;
+            }
         }
 
         #region Componentes
@@ -35,15 +44,33 @@ namespace PresentacionAgencia
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            _manejadorHerramienta.agregarDatos(new Herramienta
+            bool cerrar = true;
+            if (FrmHerramientas.herramienta!=null)
             {
-                CodigoHerramienta = 0,
-                Nombre = txtNombre.Text,
-                Marca = txtMarca.Text,
-                Medida = Convert.ToDecimal(txtMedida.Text),
-                Descripcion = txtDescripcion.Text
-            });
-            Cerrar();
+                cerrar=_manejadorHerramienta.modificarDatos(new Herramienta
+                {
+                    CodigoHerramienta = aux_herramienta.CodigoHerramienta,
+                    Nombre = txtNombre.Text,
+                    Marca = txtMarca.Text,
+                    Medida = Convert.ToDecimal(txtMedida.Text),
+                    Descripcion = txtDescripcion.Text
+                },aux_herramienta);
+            }
+            else
+            {
+                _manejadorHerramienta.agregarDatos(new Herramienta
+                {
+                    CodigoHerramienta = 0,
+                    Nombre = txtNombre.Text,
+                    Marca = txtMarca.Text,
+                    Medida = Convert.ToDecimal(txtMedida.Text),
+                    Descripcion = txtDescripcion.Text
+                });
+            }
+            if (cerrar)
+            {
+                Cerrar();
+            }
         }
     }
 }

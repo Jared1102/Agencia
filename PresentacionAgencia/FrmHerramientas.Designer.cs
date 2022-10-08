@@ -74,6 +74,7 @@
             this.dgvProductos.Size = new System.Drawing.Size(1106, 464);
             this.dgvProductos.TabIndex = 7;
             this.dgvProductos.TabStop = false;
+            this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellClick);
             // 
             // txtBuscar
             // 
