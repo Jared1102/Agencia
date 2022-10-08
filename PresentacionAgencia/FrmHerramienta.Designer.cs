@@ -119,6 +119,7 @@
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel1
             // 
@@ -151,6 +152,7 @@
             this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
             this.btnrCerrar.TabIndex = 3;
             this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // FrmHerramienta
             // 

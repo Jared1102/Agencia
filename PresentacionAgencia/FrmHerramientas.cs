@@ -43,5 +43,12 @@ namespace PresentacionAgencia
         {
             Cerrar();
         }
+
+        private void btnrAgregar_Click(object sender, EventArgs e)
+        {
+            FrmHerramienta frmHerramienta = new FrmHerramienta();
+            frmHerramienta.ShowDialog();
+            Actualizar();
+        }
     }
 }

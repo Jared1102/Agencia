@@ -71,7 +71,7 @@ namespace ManejadorAgencia
             tabla.Columns.Insert(5, _grafico.Boton("Modificar", Color.Green));
             tabla.Columns.Insert(6, _grafico.Boton("Eliminar", Color.Red));
 
-            tabla.AutoResizeColumns();
+            tabla.AutoResizeRows();
         }
     }
 }
