@@ -45,3 +45,4 @@ C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAg
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CopyComplete
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramientas.resources
