@@ -53,6 +53,7 @@ namespace PresentacionAgencia
                 frmMenu.Show();
                 this.ShowInTaskbar = false;
                 this.Hide();
+                this.ShowInTaskbar = true;
             }
         }
     }
