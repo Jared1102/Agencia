@@ -143,7 +143,7 @@
             // 
             // btnrCerrar
             // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.backBlue_32;
             this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnrCerrar.FlatAppearance.BorderSize = 0;
             this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

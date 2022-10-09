@@ -73,6 +73,12 @@
     <Compile Include="FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSesion.Designer.cs">
+      <DependentUpon>FrmSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmHerramienta.resx">
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSesion.resx">
+      <DependentUpon>FrmSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\guardarColor_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backBlue_321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
