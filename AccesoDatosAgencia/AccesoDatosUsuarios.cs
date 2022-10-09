@@ -68,7 +68,45 @@ namespace AccesoDatosAgencia
 
         public void registrarUsuario(Usuario usuario)
         {
-            string consulta;
+            string consulta=string.Format("CALL p_Usuario('{0}','{1}','{2}','{3}','{4}','{5}',1);",
+                usuario.IdUsuario,
+                usuario.Nombre,
+                usuario.ApellidoP,
+                usuario.ApellidoM,
+                usuario.FechaNacimiento,
+                usuario.RFC);
+            _conexion.EjecutarConsola(consulta);
+            
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',1)",
+                usuario.PermisosProducto.Crear.ToString(),
+                usuario.PermisosProducto.Leer.ToString(),
+                usuario.PermisosProducto.Actualizar.ToString(),
+                usuario.PermisosProducto.Borrar.ToString(),
+                usuario.IdUsuario
+                );
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_permisoProducto(0,{0},1)",
+                obtenerIdPermiso(usuario.IdUsuario));
+            _conexion.EjecutarConsola(consulta);
+        }
+
+        private string obtenerIdPermiso(string idUsuario)
+        {
+            string consulta = string.Format("SELECT * FROM permiso WHERE fkIdUsuario='{0}';", 
+                idUsuario);
+            var ds = new DataSet();
+
+            ds = _conexion.ObtenerDatos(consulta, "permiso");
+
+            var dt = new DataTable();
+            dt = ds.Tables[0];
+
+            foreach (DataRow row in dt.Rows)
+            {
+                return row["IdUsuario"].ToString();
+            }
+            return null;
         }
     }
 }
