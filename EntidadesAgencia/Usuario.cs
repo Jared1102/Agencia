@@ -15,11 +15,14 @@ namespace EntidadesAgencia
         private string _FechaNacimiento;
         private string _RFC;
 
+        private PermisosProducto permisosProducto;
+
         public string IdUsuario { get => _IdUsuario; set => _IdUsuario = value; }
         public string Nombre { get => _Nombre; set => _Nombre = value; }
         public string ApellidoP { get => _ApellidoP; set => _ApellidoP = value; }
         public string ApellidoM { get => _ApellidoM; set => _ApellidoM = value; }
         public string FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
         public string RFC { get => _RFC; set => _RFC = value; }
+        public PermisosProducto PermisosProducto { get => permisosProducto; set => permisosProducto = value; }
     }
 }
