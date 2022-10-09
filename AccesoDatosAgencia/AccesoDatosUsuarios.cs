@@ -113,6 +113,19 @@ namespace AccesoDatosAgencia
             consulta = string.Format("CALL p_permisoProducto(0,{0},1)",
                 obtenerIdPermiso(usuario.IdUsuario));
             _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',1)",
+                usuario.PermisosHerramienta.Crear.ToString(),
+                usuario.PermisosHerramienta.Leer.ToString(),
+                usuario.PermisosHerramienta.Actualizar.ToString(),
+                usuario.PermisosHerramienta.Borrar.ToString(),
+                usuario.IdUsuario
+                );
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_permisoHerramienta(0,{0},1)",
+                obtenerIdPermiso(usuario.IdUsuario));
+            _conexion.EjecutarConsola(consulta);
         }
 
         private string obtenerIdPermiso(string idUsuario)
