@@ -133,5 +133,30 @@ namespace AccesoDatosAgencia
                 usuario.RFC);
             _conexion.EjecutarConsola(consulta);
         }
+
+        public void eliminarUsuario(Usuario usuario)
+        {
+            string consulta = string.Format("CALL p_permisoProducto(0,{0},3)",
+                obtenerIdPermiso(usuario.IdUsuario));
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',3)",
+                usuario.PermisosProducto.Crear.ToString(),
+                usuario.PermisosProducto.Leer.ToString(),
+                usuario.PermisosProducto.Actualizar.ToString(),
+                usuario.PermisosProducto.Borrar.ToString(),
+                usuario.IdUsuario
+                );
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_Usuario('{0}','{1}','{2}','{3}','{4}','{5}',3);",
+                usuario.IdUsuario,
+                usuario.Nombre,
+                usuario.ApellidoP,
+                usuario.ApellidoM,
+                usuario.FechaNacimiento,
+                usuario.RFC);
+            _conexion.EjecutarConsola(consulta);
+        }
     }
 }
