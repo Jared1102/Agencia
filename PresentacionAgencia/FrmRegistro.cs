@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PresentacionAgencia
 {
-    public partial class FrmSesion : Form
+    public partial class FrmRegistro : Form
     {
-        public FrmSesion()
+        public FrmRegistro()
         {
             InitializeComponent();
         }
@@ -29,14 +29,6 @@ namespace PresentacionAgencia
         private void btnrCerrar_Click(object sender, EventArgs e)
         {
             Cerrar();
-        }
-
-        private void lnklRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            FrmRegistro frm = new FrmRegistro();
-            this.Hide();
-            frm.ShowDialog();
-            this.Show();
         }
     }
 }

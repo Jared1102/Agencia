@@ -48,3 +48,4 @@ C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAg
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.pdb
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmSesion.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmRegistro.resources

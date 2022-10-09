@@ -34,8 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@
             this.lnklRegistro.TabIndex = 2;
             this.lnklRegistro.TabStop = true;
             this.lnklRegistro.Text = "Registrarse";
+            this.lnklRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklRegistro_LinkClicked);
             // 
             // panel1
             // 
@@ -94,6 +95,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Ingrese su usuario";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 210);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(188, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "¿No esta registrado aún?";
+            // 
             // btnrCerrar
             // 
             this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
@@ -106,15 +116,6 @@
             this.btnrCerrar.TabIndex = 3;
             this.btnrCerrar.UseVisualStyleBackColor = true;
             this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 210);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "¿No esta registrado aún?";
             // 
             // FrmSesion
             // 
