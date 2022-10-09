@@ -108,5 +108,30 @@ namespace AccesoDatosAgencia
             }
             return null;
         }
+
+        public void modificarUsuario(Usuario usuario)
+        {
+            string consulta = string.Format("CALL p_permisoProducto(0,{0},2)",
+                obtenerIdPermiso(usuario.IdUsuario));
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',2)",
+                usuario.PermisosProducto.Crear.ToString(),
+                usuario.PermisosProducto.Leer.ToString(),
+                usuario.PermisosProducto.Actualizar.ToString(),
+                usuario.PermisosProducto.Borrar.ToString(),
+                usuario.IdUsuario
+                );
+            _conexion.EjecutarConsola(consulta);
+
+            consulta = string.Format("CALL p_Usuario('{0}','{1}','{2}','{3}','{4}','{5}',2);",
+                usuario.IdUsuario,
+                usuario.Nombre,
+                usuario.ApellidoP,
+                usuario.ApellidoM,
+                usuario.FechaNacimiento,
+                usuario.RFC);
+            _conexion.EjecutarConsola(consulta);
+        }
     }
 }
