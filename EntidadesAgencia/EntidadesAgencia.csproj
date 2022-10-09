@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Herramienta.cs" />
     <Compile Include="Permisos.cs" />
+    <Compile Include="PermisosHerramienta.cs" />
     <Compile Include="PermisosProducto.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -37,7 +37,31 @@ namespace AccesoDatosAgencia
                     ApellidoP = row["ApellidoP"].ToString(),
                     FechaNacimiento = DateTime.Parse(row["FechaNacimiento"].ToString()).ToString("d"),
                     RFC = row["RFC"].ToString(),
-                    PermisosProducto = obtenerPermisosProducto(row["IdUsuario"].ToString())
+                    PermisosProducto = obtenerPermisosProducto(row["IdUsuario"].ToString()),
+                    PermisosHerramienta = obtenerPermisosHerramienta(row["IdUsuario"].ToString())
+                };
+            }
+            return null;
+        }
+
+        private PermisosHerramienta obtenerPermisosHerramienta(string v)
+        {
+            string consulta = string.Format("SELECT * FROM v_PermisosHerramienta WHERE IdUsuario='{0}';", v);
+            var ds = new DataSet();
+            ds = _conexion.ObtenerDatos(consulta, "v_permisosherramienta");
+
+            var dt = new DataTable();
+            dt = ds.Tables[0];
+
+            foreach (DataRow row in dt.Rows)
+            {
+                return new PermisosHerramienta
+                {
+                    IdPermisoHerramienta = Convert.ToInt32(row["IdPermisoHerramienta"].ToString()),
+                    Crear = Convert.ToBoolean(row["Crear"]),
+                    Leer = Convert.ToBoolean(row["Leer"]),
+                    Borrar = Convert.ToBoolean(row["Borrar"]),
+                    Actualizar = Convert.ToBoolean(row["Actualizar"])
                 };
             }
             return null;

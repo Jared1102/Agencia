@@ -15,7 +15,8 @@ namespace EntidadesAgencia
         private string _FechaNacimiento;
         private string _RFC;
 
-        private PermisosProducto permisosProducto;
+        private PermisosProducto _permisosProducto;
+        private PermisosHerramienta _permisosHerramienta;
 
         public string IdUsuario { get => _IdUsuario; set => _IdUsuario = value; }
         public string Nombre { get => _Nombre; set => _Nombre = value; }
@@ -23,6 +24,7 @@ namespace EntidadesAgencia
         public string ApellidoM { get => _ApellidoM; set => _ApellidoM = value; }
         public string FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
         public string RFC { get => _RFC; set => _RFC = value; }
-        public PermisosProducto PermisosProducto { get => permisosProducto; set => permisosProducto = value; }
+        public PermisosProducto PermisosProducto { get => _permisosProducto; set => _permisosProducto = value; }
+        public PermisosHerramienta PermisosHerramienta { get => _permisosHerramienta; set => _permisosHerramienta = value; }
     }
 }
