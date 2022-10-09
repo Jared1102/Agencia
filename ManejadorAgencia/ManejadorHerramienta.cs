@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccesoDatosAgencia;
 using Crud;
+using EntidadesAgencia;
 
 namespace ManejadorAgencia
 {
@@ -63,7 +64,7 @@ namespace ManejadorAgencia
             return false;
         }
 
-        public void obtenerDatos(DataGridView tabla)
+        public void obtenerDatos(DataGridView tabla, Usuario usuario)
         {
             tabla.Columns.Clear();
             tabla.DataSource = _accesoDatosHerramienta.obtenerHerramientas();

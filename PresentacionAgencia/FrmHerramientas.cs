@@ -26,7 +26,7 @@ namespace PresentacionAgencia
 
         private void Actualizar()
         {
-            _manejadorHerramienta.obtenerDatos(dgvProductos);
+            _manejadorHerramienta.obtenerDatos(dgvProductos,FrmSesion.usuario);
         }
 
         private void Cerrar()

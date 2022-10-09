@@ -41,5 +41,13 @@ namespace PresentacionAgencia
         {
             openChildForm(new FrmProductos());
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            if (!FrmSesion.usuario.PermisosProducto.Leer)
+            {
+                tsbProductos.Visible = false;
+            }
+        }
     }
 }
