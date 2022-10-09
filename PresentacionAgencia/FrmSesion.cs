@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManejadorAgencia;
+using EntidadesAgencia;
 
 namespace PresentacionAgencia
 {
     public partial class FrmSesion : Form
     {
+        private ManejadorUsuario _manejadorUsuario;
+        public static Usuario usuario=null;
         public FrmSesion()
         {
             InitializeComponent();
+            _manejadorUsuario = new ManejadorUsuario();
         }
 
         #region Componentes
@@ -37,6 +42,18 @@ namespace PresentacionAgencia
             this.Hide();
             frm.ShowDialog();
             this.Show();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            usuario=_manejadorUsuario.ingresarUsuario(txtUsuario.Text);
+            if (usuario!=null)
+            {
+                FrmMenu frmMenu = new FrmMenu();
+                frmMenu.Show();
+                this.ShowInTaskbar = false;
+                this.Hide();
+            }
         }
     }
 }

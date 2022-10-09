@@ -23,11 +23,11 @@ namespace ManejadorAgencia
                 if (usuario!=null)
                 {
                     _grafico.Mensaje(string.Format("Bievenido de vuelta {0}", usuario.Nombre), "Bievenido", MessageBoxIcon.Information);
+                    return usuario;
                 }
                 else
                 {
                     _grafico.Mensaje("El usuario no existe, pruebe otro o registrese", "Error al ingresar", MessageBoxIcon.Warning);
-                    return usuario;
                 }
                 
             }

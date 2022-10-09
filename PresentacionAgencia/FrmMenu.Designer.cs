@@ -38,6 +38,7 @@
             this.Name = "FrmMenu";
             this.Text = "Agencia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMenu_FormClosed);
             this.ResumeLayout(false);
 
         }

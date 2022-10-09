@@ -32,10 +32,10 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lnklRegistro = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,7 @@
             this.btnIngresar.TabIndex = 1;
             this.btnIngresar.Text = "Iniciar Sesión";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lnklRegistro
             // 
@@ -76,6 +77,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 75);
             this.panel1.TabIndex = 3;
+            // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(205, 21);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 3;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // label1
             // 
@@ -103,19 +117,6 @@
             this.label3.Size = new System.Drawing.Size(188, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "¿No esta registrado aún?";
-            // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(205, 21);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 3;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
-            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // FrmSesion
             // 
