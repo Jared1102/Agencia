@@ -40,7 +40,6 @@ namespace PresentacionAgencia
                 this.ShowInTaskbar = true;
                 txtUsuario.Clear();
             }
-            usuario = null;
         }
         #endregion
 
