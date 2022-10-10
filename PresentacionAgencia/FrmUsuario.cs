@@ -81,5 +81,11 @@ namespace PresentacionAgencia
             _manejadorUsuario.modificarUsuario(FrmSesion.usuario);
             Cerrar();
         }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            _manejadorUsuario.borrarUsuario(FrmSesion.usuario);
+            Application.Exit();
+        }
     }
 }
