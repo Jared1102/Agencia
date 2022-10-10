@@ -38,6 +38,10 @@ namespace PresentacionAgencia
         private void FrmHerramientas_Load(object sender, EventArgs e)
         {
             Actualizar();
+            if (!FrmSesion.usuario.PermisosHerramienta.Crear)
+            {
+                this.Controls.Remove(btnrAgregar);
+            }
         }
 
         private void btnrCerrar_Click(object sender, EventArgs e)
@@ -62,15 +66,45 @@ namespace PresentacionAgencia
                 Medida = Convert.ToDecimal(dgvProductos.CurrentRow.Cells["Medida"].Value.ToString()),
                 Descripcion = dgvProductos.CurrentRow.Cells["Descripcion"].Value.ToString()
             };
-            switch (e.ColumnIndex)
+            if (FrmSesion.usuario.PermisosHerramienta.Actualizar && FrmSesion.usuario.PermisosHerramienta.Borrar)
             {
-                case 5: {
-                        FrmHerramienta frmHerramienta = new FrmHerramienta();
-                        frmHerramienta.ShowDialog();
-                    } break;
-                case 6: {
-                        _manejadorHerramienta.borrarDatos(herramienta);
-                    }break;
+                switch (e.ColumnIndex)
+                {
+                    case 5:
+                        {
+                            FrmHerramienta frmHerramienta = new FrmHerramienta();
+                            frmHerramienta.ShowDialog();
+                        }
+                        break;
+                    case 6:
+                        {
+                            _manejadorHerramienta.borrarDatos(herramienta);
+                        }
+                        break;
+                }
+            }
+            else if (FrmSesion.usuario.PermisosHerramienta.Borrar && !FrmSesion.usuario.PermisosHerramienta.Actualizar)
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 5:
+                        {
+                            _manejadorHerramienta.borrarDatos(herramienta);
+                        }
+                        break;
+                }
+            }
+            else if (!FrmSesion.usuario.PermisosHerramienta.Borrar && FrmSesion.usuario.PermisosHerramienta.Actualizar)
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 5:
+                        {
+                            FrmHerramienta frmHerramienta = new FrmHerramienta();
+                            frmHerramienta.ShowDialog();
+                        }
+                        break;
+                }
             }
             herramienta = null;
             Actualizar();

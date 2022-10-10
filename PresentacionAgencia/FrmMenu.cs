@@ -46,6 +46,14 @@ namespace PresentacionAgencia
                 {
                     tsbProductos.Visible = true;
                 }
+                if (!FrmSesion.usuario.PermisosHerramienta.Leer)
+                {
+                    tsbHerramientas.Visible = false;
+                }
+                else
+                {
+                    tsbHerramientas.Visible = true;
+                }
             }
             
         }
@@ -69,6 +77,11 @@ namespace PresentacionAgencia
         private void tsbUsuario_Click(object sender, EventArgs e)
         {
             openChildForm(new FrmUsuario());
+        }
+
+        private void tsbHerramientas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmHerramientas());
         }
     }
 }

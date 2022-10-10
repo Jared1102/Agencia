@@ -168,14 +168,15 @@ namespace AccesoDatosAgencia
                 obtenerIdentificadorPermisoHerramienta(usuario.PermisosHerramienta.IdPermisoHerramienta));
             _conexion.EjecutarConsola(consulta);*/
 
-            string.Format("CALL p_Permiso({0},{1},{2},{3},{4},'{5}',2)",
+            consulta=string.Format("CALL p_Permiso({0},{1},{2},{3},{4},'{5}',2)",
                 obtenerIdentificadorPermisoHerramienta(usuario.PermisosHerramienta.IdPermisoHerramienta),
-                usuario.PermisosProducto.Crear.ToString(),
-                usuario.PermisosProducto.Leer.ToString(),
-                usuario.PermisosProducto.Actualizar.ToString(),
-                usuario.PermisosProducto.Borrar.ToString(),
+                usuario.PermisosHerramienta.Crear.ToString(),
+                usuario.PermisosHerramienta.Leer.ToString(),
+                usuario.PermisosHerramienta.Actualizar.ToString(),
+                usuario.PermisosHerramienta.Borrar.ToString(),
                 usuario.IdUsuario
                 );
+            _conexion.EjecutarConsola(consulta);
 
             consulta = string.Format("CALL p_Usuario('{0}','{1}','{2}','{3}','{4}','{5}',2);",
                 usuario.IdUsuario,
