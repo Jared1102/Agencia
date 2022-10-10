@@ -50,3 +50,4 @@ C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAg
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmSesion.resources
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmRegistro.resources
 C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmMenu.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmUsuario.resources

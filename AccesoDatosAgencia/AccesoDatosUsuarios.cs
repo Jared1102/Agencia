@@ -148,11 +148,13 @@ namespace AccesoDatosAgencia
 
         public void modificarUsuario(Usuario usuario)
         {
-            string consulta = string.Format("CALL p_permisoProducto(0,{0},2)",
-                obtenerIdPermiso(usuario.IdUsuario));
-            _conexion.EjecutarConsola(consulta);
+            /*string consulta = string.Format("CALL p_permisoProducto({0},{1},2)",
+                usuario.PermisosProducto.IdPermisoProducto,
+                obtenerIdentificadorPermisoProducto(usuario.PermisosProducto.IdPermisoProducto));
+            _conexion.EjecutarConsola(consulta);*/
 
-            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',2)",
+            string consulta = string.Format("CALL p_Permiso({0},{1},{2},{3},{4},'{5}',2)",
+                obtenerIdentificadorPermisoProducto(usuario.PermisosProducto.IdPermisoProducto),
                 usuario.PermisosProducto.Crear.ToString(),
                 usuario.PermisosProducto.Leer.ToString(),
                 usuario.PermisosProducto.Actualizar.ToString(),
@@ -160,6 +162,20 @@ namespace AccesoDatosAgencia
                 usuario.IdUsuario
                 );
             _conexion.EjecutarConsola(consulta);
+
+            /*consulta = string.Format("CALL p_permisoHerramienta({0},{1},2);",
+                usuario.PermisosHerramienta.IdPermisoHerramienta.ToString(),
+                obtenerIdentificadorPermisoHerramienta(usuario.PermisosHerramienta.IdPermisoHerramienta));
+            _conexion.EjecutarConsola(consulta);*/
+
+            string.Format("CALL p_Permiso({0},{1},{2},{3},{4},'{5}',2)",
+                obtenerIdentificadorPermisoHerramienta(usuario.PermisosHerramienta.IdPermisoHerramienta),
+                usuario.PermisosProducto.Crear.ToString(),
+                usuario.PermisosProducto.Leer.ToString(),
+                usuario.PermisosProducto.Actualizar.ToString(),
+                usuario.PermisosProducto.Borrar.ToString(),
+                usuario.IdUsuario
+                );
 
             consulta = string.Format("CALL p_Usuario('{0}','{1}','{2}','{3}','{4}','{5}',2);",
                 usuario.IdUsuario,
@@ -169,6 +185,42 @@ namespace AccesoDatosAgencia
                 usuario.FechaNacimiento,
                 usuario.RFC);
             _conexion.EjecutarConsola(consulta);
+        }
+
+        private string obtenerIdentificadorPermisoHerramienta(int idPermisoHerramienta)
+        {
+            string consulta = string.Format("SELECT fkIdPermiso FROM permisoherramienta WHERE IdPermisoHerramienta = {0};",
+                idPermisoHerramienta);
+            var ds = new DataSet();
+
+            ds = _conexion.ObtenerDatos(consulta, "permisoherramienta");
+
+            var dt = new DataTable();
+            dt = ds.Tables[0];
+
+            foreach (DataRow row in dt.Rows)
+            {
+                return row["fkIdPermiso"].ToString();
+            }
+            return null;
+        }
+
+        private string obtenerIdentificadorPermisoProducto(int idPermisoProducto)
+        {
+            string consulta = string.Format("SELECT fkIdPermiso FROM permisoproducto WHERE IdPermisoProducto = {0};",
+                idPermisoProducto);
+            var ds = new DataSet();
+
+            ds = _conexion.ObtenerDatos(consulta, "permisoproducto");
+
+            var dt = new DataTable();
+            dt = ds.Tables[0];
+
+            foreach (DataRow row in dt.Rows)
+            {
+                return row["fkIdPermiso"].ToString();
+            }
+            return null;
         }
 
         public void eliminarUsuario(Usuario usuario)

@@ -30,20 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
-            this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtRFC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnRegistro = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.ckbCrearProductos = new System.Windows.Forms.CheckBox();
             this.ckbModificarProductos = new System.Windows.Forms.CheckBox();
@@ -52,6 +48,10 @@
             this.ckbModificarHerramientas = new System.Windows.Forms.CheckBox();
             this.ckbCrearHerramientas = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
+            this.btnRegistro = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,26 +74,6 @@
             this.label5.Size = new System.Drawing.Size(135, 24);
             this.label5.TabIndex = 3;
             this.label5.Text = "Nuevo Usuario";
-            // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.backBlue_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(576, 21);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 7;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
-            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
-            // 
-            // txtIdUsuario
-            // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(92, 96);
-            this.txtIdUsuario.Name = "txtIdUsuario";
-            this.txtIdUsuario.Size = new System.Drawing.Size(176, 26);
-            this.txtIdUsuario.TabIndex = 0;
             // 
             // txtNombre
             // 
@@ -130,15 +110,6 @@
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(215, 26);
             this.txtRFC.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Usuario";
             // 
             // label2
             // 
@@ -184,16 +155,6 @@
             this.label7.Size = new System.Drawing.Size(42, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "RFC";
-            // 
-            // btnRegistro
-            // 
-            this.btnRegistro.Location = new System.Drawing.Point(238, 398);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(145, 40);
-            this.btnRegistro.TabIndex = 6;
-            this.btnRegistro.Text = "Registrarse";
-            this.btnRegistro.UseVisualStyleBackColor = true;
-            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // label8
             // 
@@ -273,6 +234,45 @@
             this.label9.TabIndex = 24;
             this.label9.Text = "Herramientas";
             // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.backBlue_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(576, 21);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 7;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Usuario";
+            // 
+            // txtIdUsuario
+            // 
+            this.txtIdUsuario.Location = new System.Drawing.Point(92, 96);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(176, 26);
+            this.txtIdUsuario.TabIndex = 0;
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.Location = new System.Drawing.Point(238, 398);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(145, 40);
+            this.btnRegistro.TabIndex = 6;
+            this.btnRegistro.Text = "Registrarse";
+            this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
+            // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -318,20 +318,16 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private ButtonRound btnrCerrar;
-        private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellidoP;
         private System.Windows.Forms.TextBox txtApellidoM;
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.TextBox txtRFC;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox ckbCrearProductos;
         private System.Windows.Forms.CheckBox ckbModificarProductos;
@@ -340,5 +336,9 @@
         private System.Windows.Forms.CheckBox ckbModificarHerramientas;
         private System.Windows.Forms.CheckBox ckbCrearHerramientas;
         private System.Windows.Forms.Label label9;
+        private ButtonRound btnrCerrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtIdUsuario;
+        private System.Windows.Forms.Button btnRegistro;
     }
 }

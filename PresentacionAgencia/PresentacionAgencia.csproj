@@ -91,6 +91,12 @@
     <Compile Include="FrmSesion.Designer.cs">
       <DependentUpon>FrmSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmHerramienta.resx">
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSesion.resx">
       <DependentUpon>FrmSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backBlue_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminarUsuario_64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

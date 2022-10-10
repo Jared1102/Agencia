@@ -48,7 +48,6 @@ namespace PresentacionAgencia
         {
             FrmSesion.usuario = new Usuario
             {
-                IdUsuario = txtIdUsuario.Text,
                 Nombre = txtNombre.Text,
                 ApellidoP = txtApellidoP.Text,
                 ApellidoM = txtApellidoM.Text,
