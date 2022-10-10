@@ -29,6 +29,19 @@ namespace PresentacionAgencia
             this.Close();
         }
 
+        private void Acceder()
+        {
+            if (usuario != null)
+            {
+                FrmMenu frmMenu = new FrmMenu();
+                frmMenu.Show();
+                this.ShowInTaskbar = false;
+                this.Hide();
+                this.ShowInTaskbar = true;
+                txtUsuario.Clear();
+            }
+            usuario = null;
+        }
         #endregion
 
         private void btnrCerrar_Click(object sender, EventArgs e)
@@ -42,19 +55,13 @@ namespace PresentacionAgencia
             this.Hide();
             frm.ShowDialog();
             this.Show();
+            Acceder();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             usuario=_manejadorUsuario.ingresarUsuario(txtUsuario.Text);
-            if (usuario!=null)
-            {
-                FrmMenu frmMenu = new FrmMenu();
-                frmMenu.Show();
-                this.ShowInTaskbar = false;
-                this.Hide();
-                this.ShowInTaskbar = true;
-            }
+            Acceder();
         }
     }
 }

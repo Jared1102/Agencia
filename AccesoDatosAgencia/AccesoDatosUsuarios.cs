@@ -101,7 +101,7 @@ namespace AccesoDatosAgencia
                 usuario.RFC);
             _conexion.EjecutarConsola(consulta);
             
-            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',1)",
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},'{4}',1)",
                 usuario.PermisosProducto.Crear.ToString(),
                 usuario.PermisosProducto.Leer.ToString(),
                 usuario.PermisosProducto.Actualizar.ToString(),
@@ -114,7 +114,7 @@ namespace AccesoDatosAgencia
                 obtenerIdPermiso(usuario.IdUsuario));
             _conexion.EjecutarConsola(consulta);
 
-            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},{4},'{5}',1)",
+            consulta = string.Format("CALL p_Permiso(0,{0},{1},{2},{3},'{4}',1)",
                 usuario.PermisosHerramienta.Crear.ToString(),
                 usuario.PermisosHerramienta.Leer.ToString(),
                 usuario.PermisosHerramienta.Actualizar.ToString(),
@@ -130,7 +130,7 @@ namespace AccesoDatosAgencia
 
         private string obtenerIdPermiso(string idUsuario)
         {
-            string consulta = string.Format("SELECT * FROM permiso WHERE fkIdUsuario='{0}';", 
+            string consulta = string.Format("SELECT MAX(IdPermiso) FROM permiso WHERE fkIdUsuario='{0}';", 
                 idUsuario);
             var ds = new DataSet();
 
@@ -141,7 +141,7 @@ namespace AccesoDatosAgencia
 
             foreach (DataRow row in dt.Rows)
             {
-                return row["IdUsuario"].ToString();
+                return row["MAX(IdPermiso)"].ToString();
             }
             return null;
         }

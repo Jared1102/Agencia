@@ -44,6 +44,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnRegistro = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ckbCrearProductos = new System.Windows.Forms.CheckBox();
+            this.ckbModificarProductos = new System.Windows.Forms.CheckBox();
+            this.ckbEliminarProductos = new System.Windows.Forms.CheckBox();
+            this.ckbEliminarHerramientas = new System.Windows.Forms.CheckBox();
+            this.ckbModificarHerramientas = new System.Windows.Forms.CheckBox();
+            this.ckbCrearHerramientas = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -179,19 +187,106 @@
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(244, 229);
+            this.btnRegistro.Location = new System.Drawing.Point(238, 398);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(145, 40);
             this.btnRegistro.TabIndex = 6;
             this.btnRegistro.Text = "Registrarse";
             this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(139, 225);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Productos";
+            // 
+            // ckbCrearProductos
+            // 
+            this.ckbCrearProductos.AutoSize = true;
+            this.ckbCrearProductos.Location = new System.Drawing.Point(153, 263);
+            this.ckbCrearProductos.Name = "ckbCrearProductos";
+            this.ckbCrearProductos.Size = new System.Drawing.Size(67, 24);
+            this.ckbCrearProductos.TabIndex = 21;
+            this.ckbCrearProductos.Text = "Crear";
+            this.ckbCrearProductos.UseVisualStyleBackColor = true;
+            // 
+            // ckbModificarProductos
+            // 
+            this.ckbModificarProductos.AutoSize = true;
+            this.ckbModificarProductos.Location = new System.Drawing.Point(153, 306);
+            this.ckbModificarProductos.Name = "ckbModificarProductos";
+            this.ckbModificarProductos.Size = new System.Drawing.Size(92, 24);
+            this.ckbModificarProductos.TabIndex = 22;
+            this.ckbModificarProductos.Text = "Modificar";
+            this.ckbModificarProductos.UseVisualStyleBackColor = true;
+            // 
+            // ckbEliminarProductos
+            // 
+            this.ckbEliminarProductos.AutoSize = true;
+            this.ckbEliminarProductos.Location = new System.Drawing.Point(153, 347);
+            this.ckbEliminarProductos.Name = "ckbEliminarProductos";
+            this.ckbEliminarProductos.Size = new System.Drawing.Size(84, 24);
+            this.ckbEliminarProductos.TabIndex = 23;
+            this.ckbEliminarProductos.Text = "Eliminar";
+            this.ckbEliminarProductos.UseVisualStyleBackColor = true;
+            // 
+            // ckbEliminarHerramientas
+            // 
+            this.ckbEliminarHerramientas.AutoSize = true;
+            this.ckbEliminarHerramientas.Location = new System.Drawing.Point(351, 347);
+            this.ckbEliminarHerramientas.Name = "ckbEliminarHerramientas";
+            this.ckbEliminarHerramientas.Size = new System.Drawing.Size(84, 24);
+            this.ckbEliminarHerramientas.TabIndex = 27;
+            this.ckbEliminarHerramientas.Text = "Eliminar";
+            this.ckbEliminarHerramientas.UseVisualStyleBackColor = true;
+            // 
+            // ckbModificarHerramientas
+            // 
+            this.ckbModificarHerramientas.AutoSize = true;
+            this.ckbModificarHerramientas.Location = new System.Drawing.Point(351, 306);
+            this.ckbModificarHerramientas.Name = "ckbModificarHerramientas";
+            this.ckbModificarHerramientas.Size = new System.Drawing.Size(92, 24);
+            this.ckbModificarHerramientas.TabIndex = 26;
+            this.ckbModificarHerramientas.Text = "Modificar";
+            this.ckbModificarHerramientas.UseVisualStyleBackColor = true;
+            // 
+            // ckbCrearHerramientas
+            // 
+            this.ckbCrearHerramientas.AutoSize = true;
+            this.ckbCrearHerramientas.Location = new System.Drawing.Point(351, 263);
+            this.ckbCrearHerramientas.Name = "ckbCrearHerramientas";
+            this.ckbCrearHerramientas.Size = new System.Drawing.Size(67, 24);
+            this.ckbCrearHerramientas.TabIndex = 25;
+            this.ckbCrearHerramientas.Text = "Crear";
+            this.ckbCrearHerramientas.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(337, 225);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 20);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Herramientas";
             // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(630, 292);
+            this.ClientSize = new System.Drawing.Size(630, 465);
+            this.Controls.Add(this.ckbEliminarHerramientas);
+            this.Controls.Add(this.ckbModificarHerramientas);
+            this.Controls.Add(this.ckbCrearHerramientas);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.ckbEliminarProductos);
+            this.Controls.Add(this.ckbModificarProductos);
+            this.Controls.Add(this.ckbCrearProductos);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -237,5 +332,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox ckbCrearProductos;
+        private System.Windows.Forms.CheckBox ckbModificarProductos;
+        private System.Windows.Forms.CheckBox ckbEliminarProductos;
+        private System.Windows.Forms.CheckBox ckbEliminarHerramientas;
+        private System.Windows.Forms.CheckBox ckbModificarHerramientas;
+        private System.Windows.Forms.CheckBox ckbCrearHerramientas;
+        private System.Windows.Forms.Label label9;
     }
 }
