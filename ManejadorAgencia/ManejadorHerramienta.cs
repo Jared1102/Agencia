@@ -69,10 +69,22 @@ namespace ManejadorAgencia
             tabla.Columns.Clear();
             tabla.DataSource = _accesoDatosHerramienta.obtenerHerramientas();
 
-            tabla.Columns.Insert(5, _grafico.Boton("Modificar", Color.Green));
-            tabla.Columns.Insert(6, _grafico.Boton("Eliminar", Color.Red));
+            if (usuario.PermisosHerramienta.Actualizar && usuario.PermisosHerramienta.Borrar)
+            {
+                tabla.Columns.Insert(5, _grafico.Boton("Modificar", Color.Green));
+                tabla.Columns.Insert(6, _grafico.Boton("Eliminar", Color.Red));
+            }else if(usuario.PermisosHerramienta.Actualizar && !usuario.PermisosHerramienta.Borrar)
+            {
+                tabla.Columns.Insert(5, _grafico.Boton("Modificar", Color.Green));
+            }
+            else if (!usuario.PermisosHerramienta.Actualizar && usuario.PermisosHerramienta.Borrar)
+            {
+                tabla.Columns.Insert(5, _grafico.Boton("Eliminar", Color.Red));
+            }
+            
 
             tabla.AutoResizeRows();
+
         }
     }
 }

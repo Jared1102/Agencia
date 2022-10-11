@@ -36,3 +36,40 @@ C:\Users\cacah\source\repos\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.
 C:\Users\cacah\source\repos\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.csproj.CopyComplete
 C:\Users\cacah\source\repos\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.dll
 C:\Users\cacah\source\repos\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\ManejadorAgencia.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\ManejadorAgencia.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\AccesoDatosAgencia.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\EntidadesAgencia.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\AccesoDatos.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\MySql.Data.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Entidades.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Google.Protobuf.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\ZstdNet.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\BouncyCastle.Crypto.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Ubiety.Dns.Core.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Memory.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Buffers.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Compression.LZ4.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Hash.xxHash.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\AccesoDatosAgencia.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\EntidadesAgencia.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\AccesoDatos.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\AccesoDatos.dll.config
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\MySql.Data.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Entidades.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Google.Protobuf.pdb
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\Google.Protobuf.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\BouncyCastle.Crypto.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Memory.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Buffers.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Compression.LZ4.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\K4os.Hash.xxHash.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.csproj.AssemblyReference.cache
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.csproj.CopyComplete
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.dll
+D:\Visual Studio 2022\Agencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.pdb

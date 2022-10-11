@@ -35,10 +35,11 @@ namespace PresentacionAgencia
             {
                 FrmMenu frmMenu = new FrmMenu();
                 frmMenu.Show();
-                this.ShowInTaskbar = false;
                 this.Hide();
+                frmMenu.FormClosed += CerrarSesion;
+                /*this.ShowInTaskbar = false;
                 this.ShowInTaskbar = true;
-                txtUsuario.Clear();
+                txtUsuario.Clear();*/
             }
         }
         #endregion
@@ -61,6 +62,12 @@ namespace PresentacionAgencia
         {
             usuario=_manejadorUsuario.ingresarUsuario(txtUsuario.Text);
             Acceder();
+        }
+
+        private void CerrarSesion(object sender,FormClosedEventArgs e)
+        {
+            txtUsuario.Clear();
+            this.Show();
         }
     }
 }

@@ -76,7 +76,7 @@ namespace ManejadorAgencia
                 if (dialogResult==DialogResult.Yes)
                 {
                     _accesoDatosUsuarios.eliminarUsuario(usuario);
-                    _grafico.Mensaje(string.Format("Usuario {0} borrado con exito",usuario.Nombre),"Usuario borrado",MessageBoxIcon.Information);
+                    _grafico.Mensaje(string.Format("Lamentamos que te vayas {0}",usuario.Nombre),"Adios",MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)

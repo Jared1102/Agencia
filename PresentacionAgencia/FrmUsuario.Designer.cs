@@ -47,10 +47,10 @@
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lUsuario = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnrCerrar = new PresentacionAgencia.ButtonRound();
+            this.lUsuario = new System.Windows.Forms.Label();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -224,6 +224,19 @@
             this.panel1.Size = new System.Drawing.Size(630, 75);
             this.panel1.TabIndex = 35;
             // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(578, 25);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 50;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
+            // 
             // lUsuario
             // 
             this.lUsuario.AutoSize = true;
@@ -233,18 +246,19 @@
             this.lUsuario.TabIndex = 3;
             this.lUsuario.Text = "Nuevo Usuario";
             // 
-            // button1
+            // btnEliminarUsuario
             // 
-            this.button1.Image = global::PresentacionAgencia.Properties.Resources.eliminarUsuario_64;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(326, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 59);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Eliminar Usuario";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Image = global::PresentacionAgencia.Properties.Resources.eliminarUsuario_64;
+            this.btnEliminarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(326, 394);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(216, 59);
+            this.btnEliminarUsuario.TabIndex = 51;
+            this.btnEliminarUsuario.Text = "Eliminar Usuario";
+            this.btnEliminarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnGuardar
             // 
@@ -259,25 +273,12 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(578, 25);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 50;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
-            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
-            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 465);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.ckbEliminarHerramientas);
             this.Controls.Add(this.ckbModificarHerramientas);
@@ -336,6 +337,6 @@
         private System.Windows.Forms.Label lUsuario;
         private ButtonRound btnrCerrar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminarUsuario;
     }
 }

@@ -81,6 +81,7 @@
             this.tsbHerramientas.Name = "tsbHerramientas";
             this.tsbHerramientas.Size = new System.Drawing.Size(105, 25);
             this.tsbHerramientas.Text = "Herramientas";
+            this.tsbHerramientas.Click += new System.EventHandler(this.tsbHerramientas_Click);
             // 
             // tsbCerrarSesion
             // 
@@ -90,6 +91,7 @@
             this.tsbCerrarSesion.Name = "tsbCerrarSesion";
             this.tsbCerrarSesion.Size = new System.Drawing.Size(105, 25);
             this.tsbCerrarSesion.Text = "Cerrar Sesión";
+            this.tsbCerrarSesion.Click += new System.EventHandler(this.tsbCerrarSesion_Click);
             // 
             // FrmMenu
             // 

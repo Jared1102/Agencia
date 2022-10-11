@@ -15,6 +15,7 @@ namespace PresentacionAgencia
     {
         private Form activeForm=null;
         private Thread hiloUsuario;
+        private bool CerrarSesion = false;
         public FrmMenu()
         {
             InitializeComponent();
@@ -46,15 +47,18 @@ namespace PresentacionAgencia
                 {
                     tsbProductos.Visible = true;
                 }
+                if (!FrmSesion.usuario.PermisosHerramienta.Leer)
+                {
+                    tsbHerramientas.Visible = false;
+                }
+                else
+                {
+                    tsbHerramientas.Visible = true;
+                }
             }
             
         }
         #endregion
-        private void FrmMenu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            hiloUsuario.Abort();
-            Application.Exit();
-        }
 
         private void tsbProductos_Click(object sender, EventArgs e)
         {
@@ -69,6 +73,26 @@ namespace PresentacionAgencia
         private void tsbUsuario_Click(object sender, EventArgs e)
         {
             openChildForm(new FrmUsuario());
+        }
+
+        private void tsbHerramientas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmHerramientas());
+        }
+
+        private void tsbCerrarSesion_Click(object sender, EventArgs e)
+        {
+            CerrarSesion = true;
+            this.Close();
+        }
+
+        private void FrmMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            hiloUsuario.Abort();
+            if (!CerrarSesion)
+            {
+                Application.Exit();
+            }
         }
     }
 }
