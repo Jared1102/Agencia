@@ -67,6 +67,7 @@ namespace PresentacionAgencia
         private void CerrarSesion(object sender,FormClosedEventArgs e)
         {
             txtUsuario.Clear();
+            usuario = null;
             this.Show();
         }
     }
