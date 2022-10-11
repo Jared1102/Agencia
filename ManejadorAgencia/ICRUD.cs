@@ -10,7 +10,7 @@ namespace ManejadorAgencia
 {
     internal interface ICRUD
     {
-        void obtenerDatos(DataGridView tabla);
+        void obtenerDatos(DataGridView tabla, Usuario usuario);
         void agregarDatos(dynamic dato);
         bool modificarDatos(dynamic dato, dynamic aux_dato);
         void borrarDatos(dynamic dato);

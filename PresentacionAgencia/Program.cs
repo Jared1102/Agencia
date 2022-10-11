@@ -13,7 +13,7 @@ namespace PresentacionAgencia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHerramientas());
+            Application.Run(new FrmSesion());
         }
     }
 }

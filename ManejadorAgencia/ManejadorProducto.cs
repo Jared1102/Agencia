@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccesoDatosAgencia;
 using Crud;
+using EntidadesAgencia;
 
 namespace ManejadorAgencia
 {
@@ -63,14 +64,23 @@ namespace ManejadorAgencia
             return false;
         }
 
-        public void obtenerDatos(DataGridView tabla)
+        public void obtenerDatos(DataGridView tabla, Usuario usuario)
         {
             tabla.Columns.Clear();
             tabla.DataSource = _accesoDatosProducto.ObtenerProductos();
 
-            tabla.Columns.Insert(4, _grafico.Boton("Modificar", Color.Green));
-            tabla.Columns.Insert(5, _grafico.Boton("Eliminar", Color.Red));
-
+            if (usuario.PermisosProducto.Actualizar && usuario.PermisosProducto.Borrar)
+            {
+                tabla.Columns.Insert(4, _grafico.Boton("Modificar", Color.Green));
+                tabla.Columns.Insert(5, _grafico.Boton("Eliminar", Color.Red));
+            }
+            else if (usuario.PermisosProducto.Borrar && !usuario.PermisosProducto.Actualizar)
+            {
+                tabla.Columns.Insert(4, _grafico.Boton("Eliminar", Color.Red));
+            }else if (!usuario.PermisosProducto.Borrar && usuario.PermisosProducto.Actualizar)
+            {
+                tabla.Columns.Insert(4, _grafico.Boton("Modificar", Color.Green));
+            }
             tabla.AutoResizeColumns();
         }
     }

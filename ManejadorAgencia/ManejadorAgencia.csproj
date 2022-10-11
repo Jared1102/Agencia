@@ -49,6 +49,7 @@
     <Compile Include="ICRUD.cs" />
     <Compile Include="ManejadorHerramienta.cs" />
     <Compile Include="ManejadorProducto.cs" />
+    <Compile Include="ManejadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

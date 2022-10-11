@@ -1,0 +1,106 @@
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.exe.config
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.exe
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\EntidadesAgencia.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\ManejadorAgencia.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\AccesoDatosAgencia.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Crud.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\MySql.Data.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Entidades.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\ZstdNet.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Memory.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Buffers.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\EntidadesAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\ManejadorAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\AccesoDatosAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.dll.config
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\MySql.Data.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Entidades.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Memory.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Buffers.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.AssemblyReference.cache
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.SuggestedBindingRedirects.cache
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe.config
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramienta.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramientas.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProducto.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProductos.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.Properties.Resources.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.GenerateResource.cache
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CoreCompileInputs.cache
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CopyComplete
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.pdb
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmSesion.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmRegistro.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmMenu.resources
+C:\Users\cacah\source\repos\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmUsuario.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.exe.config
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.exe
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\PresentacionAgencia.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\EntidadesAgencia.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\ManejadorAgencia.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\AccesoDatosAgencia.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Crud.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\MySql.Data.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Entidades.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\ZstdNet.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\BouncyCastle.Crypto.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Ubiety.Dns.Core.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Memory.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Buffers.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Hash.xxHash.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\EntidadesAgencia.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\ManejadorAgencia.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\AccesoDatosAgencia.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\AccesoDatos.dll.config
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\MySql.Data.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Entidades.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.pdb
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\Google.Protobuf.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\BouncyCastle.Crypto.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Memory.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Buffers.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Compression.LZ4.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\K4os.Hash.xxHash.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.AssemblyReference.cache
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe.config
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramienta.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramientas.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmMenu.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProducto.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProductos.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmRegistro.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmSesion.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmUsuario.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.Properties.Resources.resources
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.GenerateResource.cache
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.csproj.CopyComplete
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.exe
+D:\Visual Studio 2022\Agencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.pdb

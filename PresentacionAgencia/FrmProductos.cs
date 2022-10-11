@@ -25,7 +25,7 @@ namespace PresentacionAgencia
         #region Componentes
         private void Actualizar()
         {
-            _manejadorProducto.obtenerDatos(dgvProductos);
+            _manejadorProducto.obtenerDatos(dgvProductos,FrmSesion.usuario);
         }
 
         private void Cerrar()
@@ -36,6 +36,10 @@ namespace PresentacionAgencia
 
         private void FrmProductos_Load(object sender, EventArgs e)
         {
+            if (!FrmSesion.usuario.PermisosProducto.Crear)
+            {
+                this.Controls.Remove(btnrAgregar);
+            }
             Actualizar();
         }
 
@@ -61,16 +65,47 @@ namespace PresentacionAgencia
                 Marca = dgvProductos.CurrentRow.Cells["Marca"].Value.ToString()
             };
 
-            switch (e.ColumnIndex)
+            if (FrmSesion.usuario.PermisosProducto.Actualizar && FrmSesion.usuario.PermisosProducto.Borrar)
             {
-                case 4: {
-                        FrmProducto frmProducto = new FrmProducto();
-                        frmProducto.ShowDialog();
-                    } break;
-                case 5: {
-                        _manejadorProducto.borrarDatos(producto);
-                    }break;
+                switch (e.ColumnIndex)
+                {
+                    case 4:
+                        {
+                            FrmProducto frmProducto = new FrmProducto();
+                            frmProducto.ShowDialog();
+                        }
+                        break;
+                    case 5:
+                        {
+                            _manejadorProducto.borrarDatos(producto);
+                        }
+                        break;
+                }
             }
+            else if (FrmSesion.usuario.PermisosProducto.Borrar && !FrmSesion.usuario.PermisosProducto.Actualizar)
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 4:
+                        {
+                            _manejadorProducto.borrarDatos(producto);
+                        }
+                        break;
+                }
+            }
+            else if (!FrmSesion.usuario.PermisosProducto.Borrar && FrmSesion.usuario.PermisosProducto.Actualizar)
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 4:
+                        {
+                            FrmProducto frmProducto = new FrmProducto();
+                            frmProducto.ShowDialog();
+                        }
+                        break;
+                }
+            }
+
             producto = null;
             Actualizar();
         }

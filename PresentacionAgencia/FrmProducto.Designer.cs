@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnrCerrar = new PresentacionAgencia.ButtonRound();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,19 @@
             this.label1.Size = new System.Drawing.Size(86, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Producto";
+            // 
+            // btnrCerrar
+            // 
+            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.backBlue_32;
+            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrCerrar.FlatAppearance.BorderSize = 0;
+            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
+            this.btnrCerrar.Name = "btnrCerrar";
+            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnrCerrar.TabIndex = 4;
+            this.btnrCerrar.UseVisualStyleBackColor = true;
+            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // label2
             // 
@@ -122,19 +135,6 @@
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnrCerrar
-            // 
-            this.btnrCerrar.BackgroundImage = global::PresentacionAgencia.Properties.Resources.closeRed_32;
-            this.btnrCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrCerrar.FlatAppearance.BorderSize = 0;
-            this.btnrCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrCerrar.Location = new System.Drawing.Point(502, 21);
-            this.btnrCerrar.Name = "btnrCerrar";
-            this.btnrCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnrCerrar.TabIndex = 4;
-            this.btnrCerrar.UseVisualStyleBackColor = true;
-            this.btnrCerrar.Click += new System.EventHandler(this.btnrCerrar_Click);
             // 
             // FrmProducto
             // 
