@@ -15,14 +15,18 @@ namespace ManejadorAgencia
         private AccesoDatosUsuarios _accesoDatosUsuarios = new AccesoDatosUsuarios();
         private Grafico _grafico = new Grafico();
 
-        public Usuario ingresarUsuario(string IdUsuario)
+        public Usuario ingresarUsuario(string IdUsuario, bool registro)
         {
             try
             {
                 Usuario usuario= _accesoDatosUsuarios.buscarUsuario(IdUsuario);
                 if (usuario!=null)
                 {
-                    _grafico.Mensaje(string.Format("Bievenido de vuelta {0}", usuario.Nombre), "Bievenido", MessageBoxIcon.Information);
+                    if (!registro)
+                    {
+                        _grafico.Mensaje(string.Format("Bievenido {0}", usuario.Nombre), "Bievenido", MessageBoxIcon.Information);
+                    }
+                    
                     return usuario;
                 }
                 else

@@ -55,18 +55,22 @@ namespace PresentacionAgencia
             this.Hide();
             frm.ShowDialog();
             this.Show();
-            Acceder();
+            if (usuario!=null)
+            {
+                usuario = _manejadorUsuario.ingresarUsuario(usuario.IdUsuario, true);
+                Acceder();
+            }
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            usuario=_manejadorUsuario.ingresarUsuario(txtUsuario.Text);
+            usuario=_manejadorUsuario.ingresarUsuario(txtUsuario.Text,false);
+            txtUsuario.Clear();
             Acceder();
         }
 
         private void CerrarSesion(object sender,FormClosedEventArgs e)
         {
-            txtUsuario.Clear();
             usuario = null;
             this.Show();
         }
